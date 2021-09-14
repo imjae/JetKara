@@ -24,11 +24,11 @@ public class GameManager : MonoBehaviour
 	{
 		score = 0;
 
-		InvokeRepeating("CreateObjects", 1,2);
+		InvokeRepeating("CreateObjects", 1, 0.1f);
 	}
 
 	void CreateObjects()
 	{
-		Instantiate(objects, new Vector3(7.5f, Random.Range(-2f, 2.1f) , 0) , Quaternion.identity);
+		Instantiate(objects, new Vector3(7.5f, 0 , 0) , Quaternion.identity);
 	}
 }

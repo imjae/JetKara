@@ -31,7 +31,7 @@ public class PlayerScript : MonoBehaviour
 		fire.SetActive (true);
 		GetComponent<AudioSource>().Play();
 		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-		GetComponent<Rigidbody2D>().AddForce(Vector2.up * 200);
+		GetComponent<Rigidbody2D>().AddForce(Vector2.up * 100);
 	}
 
 	void OnTriggerEnter2D(Collider2D col) 
